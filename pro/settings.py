@@ -30,7 +30,7 @@ ALLOWED_HOSTS = ['*']
 # ALLOWED_HOSTS = ['https://webappdb1-dhcpgte8eydqe2gc.canadacentral-01.azurewebsites.net']
 
 CSRF_TRUSTED_ORIGINS = [
-    "https://webdbwithlocal-gwezegh0htgud5c4.canadacentral-01.azurewebsites.net",
+    # "https://webdbwithlocal-gwezegh0htgud5c4.canadacentral-01.azurewebsites.net",
     "https://webappdb1-dhcpgte8eydqe2gc.canadacentral-01.azurewebsites.net"
 ]
 # Application definition
