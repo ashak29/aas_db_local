@@ -42,4 +42,4 @@ steps:
     appName: 'webappdb1'
     package: '$(Build.ArtifactStagingDirectory)/app.zip'
     # Ensure build happens on deployment
-    # appSettings: '-SCM_DO_BUILD_DURING_DEPLOYMENT true -WEBSITES_ENABLE_APP_SERVICE_STORAGE false'
+    appSettings: '-SCM_DO_BUILD_DURING_DEPLOYMENT true -WEBSITES_ENABLE_APP_SERVICE_STORAGE false'
