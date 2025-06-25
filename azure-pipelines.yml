@@ -14,10 +14,10 @@ steps:
     versionSpec: '$(pythonVersion)'
 
 # Optional: Install and test dependencies locally (recommended)
-# - script: |
-#     python -m pip install --upgrade pip
-#     pip install -r requirements.txt
-#   displayName: 'Install dependencies for validation'
+- script: |
+    python -m pip install --upgrade pip
+    pip install -r requirements.txt
+  displayName: 'Install dependencies for validation'
 
 # Create archive with explicit inclusion of requirements.txt
 - task: ArchiveFiles@2
