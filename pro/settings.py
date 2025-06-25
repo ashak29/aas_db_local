@@ -25,9 +25,12 @@ SECRET_KEY = 'django-insecure-eu)nlk6095f20x9vj)l(bdpj$!t7zxegz2p-gkv^#ya8d%hjy7
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*','http://webappdb1-dhcpgte8eydqe2gc.canadacentral-01.azurewebsites.net']
+ALLOWED_HOSTS = ['*','https://webappdb1-dhcpgte8eydqe2gc.canadacentral-01.azurewebsites.net']
 
-
+CSRF_TRUSTED_ORIGINS = [
+    "https://webdbwithlocal-gwezegh0htgud5c4.canadacentral-01.azurewebsites.net",
+    "https://webappdb1-dhcpgte8eydqe2gc.canadacentral-01.azurewebsites.net"
+]
 # Application definition
 
 INSTALLED_APPS = [
@@ -103,10 +106,7 @@ DATABASES = {
 
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators
-CSRF_TRUSTED_ORIGINS = [
-    "https://webdbwithlocal-gwezegh0htgud5c4.canadacentral-01.azurewebsites.net",
-    "https://webappdb1-dhcpgte8eydqe2gc.canadacentral-01.azurewebsites.net"
-]
+
 
 
 AUTH_PASSWORD_VALIDATORS = [
