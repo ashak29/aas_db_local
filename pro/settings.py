@@ -30,8 +30,9 @@ ALLOWED_HOSTS = ['*']
 # ALLOWED_HOSTS = ['https://webappdb1-dhcpgte8eydqe2gc.canadacentral-01.azurewebsites.net']
 
 CSRF_TRUSTED_ORIGINS = [
+    "https://dbapp-c5a6ckhcbzecabdt.canadacentral-01.azurewebsites.net",
     # "https://webdbwithlocal-gwezegh0htgud5c4.canadacentral-01.azurewebsites.net",
-    "https://webappdb1-dhcpgte8eydqe2gc.canadacentral-01.azurewebsites.net"
+    # "https://webappdb1-dhcpgte8eydqe2gc.canadacentral-01.azurewebsites.net"
 ]
 # Application definition
 
@@ -91,10 +92,16 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'postgres',
-        'USER': 'username',
+        'USER': 'nkpmtafspx',
         'PASSWORD': "Password@1",
-        'HOST': 'webdbapp.postgres.database.azure.com',
+        'HOST': 'dbapp-server.postgres.database.azure.com',
         'PORT': 5432,
+        # 'ENGINE': 'django.db.backends.postgresql',
+        # 'NAME': 'postgres',
+        # 'USER': 'username',
+        # 'PASSWORD': "Password@1",
+        # 'HOST': 'webdbapp.postgres.database.azure.com',
+        # 'PORT': 5432,
         # local
         # 'ENGINE': 'django.db.backends.postgresql',
         # 'NAME': 'postgres',
